@@ -11,7 +11,7 @@ from twilio.rest.resources.connect_apps import (
     ConnectApps, AuthorizedConnectApps
 )
 from twilio.rest.resources.queues import Queues
-
+from twilio.rest.resources.usage import UsageRecords, UsageTriggers
 
 class Account(InstanceResource):
     """ An Account resource """
@@ -33,6 +33,8 @@ class Account(InstanceResource):
         ConnectApps,
         Queues,
         AuthorizedConnectApps,
+        UsageRecords,
+        UsageTriggers
     ]
 
     def update(self, **kwargs):
